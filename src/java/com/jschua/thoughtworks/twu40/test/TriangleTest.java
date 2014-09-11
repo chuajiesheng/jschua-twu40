@@ -26,6 +26,11 @@ public class TriangleTest {
     public void testPrintVerticalLine() throws Exception {
         String expected = "*\n*\n*\n*";
         assertEquals(expected, new Triangle().printVerticalLine(4));
+    }
 
+    @Test
+    public void testPrintRightTriangle() throws Exception {
+        String expected = "*\n**\n***";
+        assertEquals(expected, new Triangle().printRightTriangle(3));
     }
 }
