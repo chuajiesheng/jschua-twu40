@@ -15,4 +15,12 @@ public class Triangle {
         }
         return sb.toString();
     }
+
+    public String printVerticalLine(int lines) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < lines; i++) {
+            sb.append("*\n");
+        }
+        return sb.toString().trim();
+    }
 }
