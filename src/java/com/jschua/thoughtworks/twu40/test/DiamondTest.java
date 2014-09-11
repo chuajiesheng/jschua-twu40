@@ -20,4 +20,10 @@ public class DiamondTest {
         String expected = "  *\n ***\n*****\n ***\n  *\n";
         assertEquals(expected, new Diamond().printDiamond(3));
     }
+
+    @Test
+    public void testPrintNameDiamond() throws Exception {
+        String expected = "  *\n **\nJie Sheng\n **\n  *";
+        assertEquals(expected, new Diamond().printNameDiamond(3));
+    }
 }
