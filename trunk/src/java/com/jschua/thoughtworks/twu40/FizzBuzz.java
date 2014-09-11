@@ -26,4 +26,13 @@ public class FizzBuzz {
         }
         return "";
     }
+
+    public String output(int n) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 1; i <= n; i++) {
+            sb.append(print(i));
+            sb.append("\n");
+        }
+        return sb.toString().trim();
+    }
 }
