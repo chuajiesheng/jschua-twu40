@@ -45,4 +45,20 @@ public class Diamond {
         }
         return sb.toString();
     }
+
+    public String printNameDiamond(int n) {
+        StringBuilder sb = new StringBuilder();
+        sb.append(printUpperDiamond(n));
+        sb.append("Jie Sheng\n");
+        sb.append(printLowerDiamond(n));
+        return sb.toString();
+    }
+
+    private String printUpperDiamond(int n) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < n; i++) {
+            sb.append(printSpace(n - i) + printAsterisk(i + i - 1) + "\n");
+        }
+        return sb.toString();
+    }
 }
