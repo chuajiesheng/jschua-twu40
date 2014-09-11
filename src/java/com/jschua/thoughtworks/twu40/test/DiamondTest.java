@@ -10,8 +10,14 @@ import static junit.framework.Assert.assertEquals;
  */
 public class DiamondTest {
     @Test
-    public void testIsoTriangle() throws Exception {
+    public void testPrintIsoTriangle() throws Exception {
         String expected = "   *\n  ***\n *****\n*******";
         assertEquals(expected, new Diamond().printIsoTriangle(4));
+    }
+
+    @Test
+    public void testPrintDiamond() throws Exception {
+        String expected = "  *\n ***\n*****\n ***\n  *\n";
+        assertEquals(expected, new Diamond().printDiamond(3));
     }
 }
