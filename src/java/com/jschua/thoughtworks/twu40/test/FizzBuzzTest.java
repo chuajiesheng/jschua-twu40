@@ -20,4 +20,10 @@ public class FizzBuzzTest {
         String expected = "Buzz";
         assertEquals(expected, new FizzBuzz().print(5));
     }
+
+    @Test
+    public void testFizzBuzz() throws Exception {
+        String expected = "FizzBuzz";
+        assertEquals(expected, new FizzBuzz().print(15));
+    }
 }
