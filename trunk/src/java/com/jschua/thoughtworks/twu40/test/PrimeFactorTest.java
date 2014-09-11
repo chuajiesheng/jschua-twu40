@@ -14,4 +14,10 @@ public class PrimeFactorTest {
         String expected = "2,3";
         assertEquals(expected, new PrimeFactor().factor(6));
     }
+
+    @Test
+    public void testPrimeFactorsOf30() throws Exception {
+        String expected = "2,3,5";
+        assertEquals(expected, new PrimeFactor().factor(30));
+    }
 }
